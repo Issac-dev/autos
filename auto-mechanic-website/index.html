@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Autos - Your premium destination for automotive excellence. Specialized in high-end car repair, maintenance, and customization services.">
+    <meta name="keywords"
+        content="auto repair, luxury cars, car maintenance, automotive services, premium cars, car customization">
+    <meta name="author" content="Autos">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Autos - Premium Automotive Services">
+    <meta property="og:description"
+        content="Your ultimate destination for premium auto repair and maintenance services. Experience excellence in automotive care.">
+    <meta property="og:image" content="./models/lambo.glb">
+    <meta property="og:url" content="http://127.0.0.1:5500/auto-mechanic-website/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./media/logo.png">
+    <link rel="apple-touch-icon" href="./media/logo.png">
+
+    <title>Autos - Premium Automotive Services</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    <!-- AOS CSS and JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="./media/logo.png" alt="Autos Logo" class="navbar-logo">
+            <span class="brand-text">Autos</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">
+                        Home
+                        <span class="active-link"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#works">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="hero" class="hero d-flex">
+        <div id="model-container" class="w-50"></div>
+        <div class="hero-text">
+            <h1 data-text="Welcome to">Welcome to <span>Autos</span></h1>
+            <p>Your ultimate destination for premium auto repair and maintenance services.</p>
+        </div>
+    </div>
+
+    <!-- Engine Section -->
+    <div class="engine-section d-flex">
+        <div class="engine-text">
+            <h2 data-text="V8 Power" data-aos="fade-down">V8 Power</h2>
+            <p>Experience raw mechanical excellence with our precision-engineered V8 powerhouse. Our expert technicians
+                specialize in high-performance engine tuning, delivering unmatched power and reliability. From classic
+                muscle cars to modern supercars, we understand the heart of every engine. With state-of-the-art
+                diagnostics and premium components, we ensure your V8 performs at its absolute peak. Trust us to unleash
+                the true potential of your machine while maintaining the perfect balance of power and refinement.</p>
+        </div>
+        <div class="engine-model">
+            <iframe title="V8 Muscle Car engine 3D model" class="engine-iframe"
+                src="https://sketchfab.com/models/cd217de479094d9d9f8b5eac9bdab5eb/embed?autostart=1&amp;internal=1&amp;tracking=0&amp;ui_infos=0&amp;ui_snapshots=1&amp;ui_stop=0&amp;ui_watermark=0"
+                frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport
+                execution-while-not-rendered web-share>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="services-section">
+        <div class="services-overlay"></div>
+        <div class="services-content">
+            <h2 data-text="Our Services" data-aos="fade-down" data-aos-duration="1000">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="800">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Performance Tuning</h3>
+                    <p>Unleash your vehicle's true potential with our precision tuning services. We optimize everything
+                        from ECU mapping to turbo systems.</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="800">
+                    <i class="fas fa-car-side"></i>
+                    <h3>Custom Modifications</h3>
+                    <p>Transform your vision into reality with our bespoke modification services, from aerodynamics to
+                        interior customization.</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="800">
+                    <i class="fas fa-tools"></i>
+                    <h3>Diagnostic Excellence</h3>
+                    <p>State-of-the-art diagnostic tools combined with expert knowledge to identify and resolve complex
+                        issues.</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in-up" data-aos-delay="800" data-aos-duration="800">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Premium Maintenance</h3>
+                    <p>Keep your luxury vehicle in peak condition with our comprehensive maintenance programs tailored
+                        to your specific model.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Works Section -->
+    <div id="works" class="works-section">
+        <h2 data-text="Previous Works" data-aos="fade-down" data-aos-duration="1000">Previous Works</h2>
+        <div class="title-underline" data-aos="zoom-in" data-aos-delay="300"></div>
+
+        <div class="works-container">
+            <div class="work-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="work-image">
+                    <img src="./media/project1.jpg" alt="Project 1">
+                    <div class="work-overlay">
+                        <span class="work-stats">
+                            <i class="fas fa-wrench"></i> Full Restoration
+                        </span>
+                        <h3>Classic Mustang Revival</h3>
+                        <p>Complete restoration of a 1967 Mustang GT500, including engine rebuild and custom paint job.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="work-image">
+                    <img src="./media/project2.jpg" alt="Project 2">
+                    <div class="work-overlay">
+                        <span class="work-stats">
+                            <i class="fas fa-tachometer-alt"></i> Performance Upgrade
+                        </span>
+                        <h3>Ferrari Engine Tune</h3>
+                        <p>High-performance engine tuning and custom exhaust system installation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="work-image">
+                    <img src="./media/project3.jpg" alt="Project 3">
+                    <div class="work-overlay">
+                        <span class="work-stats">
+                            <i class="fas fa-paint-brush"></i> Custom Build
+                        </span>
+                        <h3>Lamborghini Showcase</h3>
+                        <p>Custom aerodynamic kit and performance modifications for maximum impact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="work-image">
+                    <img src="./media/project4.jpg" alt="Project 4">
+                    <div class="work-overlay">
+                        <span class="work-stats">
+                            <i class="fas fa-cog"></i> Modern Classic
+                        </span>
+                        <h3>Porsche Reimagined</h3>
+                        <p>Modern technology integration while preserving classic aesthetics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="work-image">
+                    <img src="./media/project5.jpg" alt="Project 5">
+                    <div class="work-overlay">
+                        <span class="work-stats">
+                            <i class="fas fa-bolt"></i> Electric Convert
+                        </span>
+                        <h3>Tesla Enhanced</h3>
+                        <p>Custom performance upgrades and exterior modifications for electric excellence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="work-image">
+                    <img src="./media/project6.jpg" alt="Project 6">
+                    <div class="work-overlay">
+                        <span class="work-stats">
+                            <i class="fas fa-fire"></i> Track Beast
+                        </span>
+                        <h3>McLaren Track Build</h3>
+                        <p>Race-ready modifications and aerodynamic optimization for track performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-section">
+        <h2 data-text="Client Stories" data-aos="fade-down">Client Stories</h2>
+        <div class="testimonials-grid">
+            <!-- First Testimonial -->
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="client-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Their attention to detail is unmatched. They transformed my classic Mustang into a modern beast
+                    while preserving its soul."</p>
+                <div class="client-info">
+                    <div class="client-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="client-details">
+                        <h4>James Mitchell</h4>
+                        <span>Mustang GT500 Owner</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Testimonial -->
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="client-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Exceptional craftsmanship on my Ferrari's engine tune. The performance increase is remarkable, and
+                    their expertise is second to none."</p>
+                <div class="client-info">
+                    <div class="client-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="client-details">
+                        <h4>Sarah Rodriguez</h4>
+                        <span>Ferrari 458 Owner</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Testimonial -->
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <div class="client-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"The custom modifications they did on my Lamborghini exceeded all expectations. Their innovative
+                    approach and attention to detail is outstanding."</p>
+                <div class="client-info">
+                    <div class="client-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="client-details">
+                        <h4>Michael Chen</h4>
+                        <span>Lamborghini Huracán Owner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer">
+        <div class="footer-video">
+            <video autoplay muted loop playsinline>
+                <source src="./media/drive.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="footer-overlay"></div>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- About Column -->
+                <div class="footer-column" data-aos="fade-right">
+                    <div class="footer-brand">
+                        <img src="./media/logo.png" alt="Autos Logo" class="footer-logo">
+                        <h3>AUTOS</h3>
+                    </div>
+                    <p class="footer-about">Elevating automotive excellence through precision engineering and masterful
+                        craftsmanship. Where passion meets performance.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/issac_olayinka"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/issac_olayinka"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/oladipoisaac1"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-column" data-aos="fade-up">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-column" data-aos="fade-left">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>31, Kayode Yussuf Street<br>Ojodu, Lagos</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+234 813 068 1656</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@autos.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AUTOS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-out-cubic',
+            once: false,
+            mirror: true,
+            offset: 50,
+            anchorPlacement: 'center-bottom'
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hide loader after page load
+            setTimeout(() => {
+                const loader = document.querySelector('.loader-wrapper');
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>
